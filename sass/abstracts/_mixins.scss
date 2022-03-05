@@ -5,3 +5,13 @@
         clear: both;
     }
 }
+
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 600px) {
+            
+        }
+    }
+}
