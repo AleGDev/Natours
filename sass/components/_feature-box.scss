@@ -10,6 +10,10 @@
 
     transition: all .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         font-size: 6rem;
         margin-bottom: .5rem;
@@ -17,6 +21,10 @@
         display: inline-block;
         background-image: linear-gradient(to right,$color-green-light, $color-green-dark);
         -webkit-background-clip: text;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
